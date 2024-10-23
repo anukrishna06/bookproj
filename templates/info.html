@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Information</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+body{
+    background: linear-gradient(90deg, rgba(128, 32, 0, 1) 0%, rgba(238, 130, 238, 1) 100%);
+
+}
+.navbar{
+    background: linear-gradient(90deg, rgba(244, 0, 255, 1) 0%, rgba(255, 0, 0, 1) 100%);
+
+}
+.card{
+    background: linear-gradient(90deg, rgba(76, 175, 80, 1) 0%, rgba(49, 220, 255, 1) 100%);
+
+}
+
+</style>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Book Store</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/page">Home</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="card-title mb-0">Book Information</h2>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title" id="book-title">{{data.name}}</h3>
+                    <h5 class="card-subtitle mb-2 text-muted" id="book-author"><cite>Author </cite>: {{data.author}}</h5>
+                    <p class="card-text" id="book-description">
+                       {{data.description}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
